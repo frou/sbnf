@@ -1,6 +1,7 @@
 use std::collections::HashMap;
 
-use crate::sbnf::{is_identifier_char, Node};
+use crate::sbnf::common::is_identifier_char;
+use crate::sbnf::parser::Node;
 use crate::sublime_syntax;
 
 pub struct CompileResult<'a, T> {

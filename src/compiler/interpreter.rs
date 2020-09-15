@@ -6,7 +6,7 @@ use super::common::{
     trim_ascii, var_maps_get, CallStack, CompileOptions, CompileResult, Error,
     RuleOptions, Value, VarMap,
 };
-use crate::sbnf::{Node, NodeData};
+use crate::sbnf::parser::{Node, NodeData};
 use crate::sublime_syntax;
 
 pub struct Interpreted<'a> {

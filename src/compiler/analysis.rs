@@ -4,7 +4,7 @@ use super::common::{
     parse_top_level_scope, trim_ascii, CallStack, CompileOptions,
     CompileResult, Error, Value, VarMap,
 };
-use crate::sbnf::{Grammar, Node, NodeData};
+use crate::sbnf::parser::{Grammar, Node, NodeData};
 use crate::sublime_syntax;
 
 pub struct Analysis<'a> {
