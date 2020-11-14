@@ -247,6 +247,7 @@ pub fn var_maps_get<'a, 'b>(
     maps: &[&'b VarMap<'a>],
     key: &str,
 ) -> Option<&'b Value<'a>> {
+
     for var_map in maps {
         if let Some(value) = var_map.get(key) {
             return Some(value);
